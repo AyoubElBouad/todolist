@@ -23,7 +23,7 @@
 import { reactive, ref } from 'vue';
 const ls_id = "todo"
 const to_dos = reactive(JSON.parse(localStorage.getItem(ls_id) || "[]"));
-à
+
 const to_do = ref({});
 const toggle = ref(false);
 
