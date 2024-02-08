@@ -13,8 +13,11 @@
 				<input v-if="toggle" type="text"  v-model="todo.desc" class="inp"/>
 
 			</div>
-			<button @click="deleteTask(todo)">Delete</button>
-			<button @click="updateTask()">Modifier</button>
+			<div>
+				<button @click="deleteTask(todo)">Delete</button>
+				<button @click="updateTask()">Modifier</button>
+			</div>
+			
 		</li>
 	</ol>
 	
