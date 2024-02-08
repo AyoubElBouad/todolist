@@ -34,6 +34,7 @@ button {
 }
 .inp{
 	height:  30px;
+	width: 260px;
 }
 
 </style>

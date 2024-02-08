@@ -6,7 +6,7 @@
 	</div>
 	<div>
 		<button @click="deleteTask(todo)">Delete</button>
-		<button :class="deleteClass" @click="updateTask()">{{ toggle ? 'Valider' : 'Modifier' }}</button>
+		<button :style="{backgroundColor: toggle ? 	'#42b883' : '#fbbf24'}" @click="updateTask()">{{ toggle ? 'Valider' : 'Modifier' }}</button>
 	</div>
 </template>
 <script setup>
@@ -17,7 +17,6 @@ const props = defineProps({
 
 import { ref } from 'vue';
 import {to_dos  ,setNewTask ,saveTasks  } from '../../src/composables/todo';
-
 
 
 const toggle = ref(false);
